@@ -16,6 +16,12 @@ export default function Home() {
         >
           Nested Users
         </Link>
+        <Link
+          href='/products'
+          className="hover:underline py-1 transition-all duration-300 "
+        >
+          Products
+        </Link>
       </section>
       <h1>Hello Next js </h1>
     </main>

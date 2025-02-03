@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const NestedUserPage = () => {
   return (
     <div className='text-rose-400 text-lg'>
       Nested user here
@@ -8,4 +8,4 @@ const page = () => {
   )
 }
 
-export default page
+export default NestedUserPage
