@@ -10,12 +10,12 @@ export default function Home() {
         >
           Users
         </Link>
-        <Link
+        {/* <Link
           href='/users/nestedUser'
           className="hover:underline py-1 transition-all duration-300 "
         >
           Nested Users
-        </Link>
+        </Link> */}
         <Link
           href='/products'
           className="hover:underline py-1 transition-all duration-300 "

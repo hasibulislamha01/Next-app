@@ -1,5 +1,5 @@
 import React from 'react'
-import AddToCart from '../components/AddToCart'
+import ActionableButton from '../../src/components/ActionableButtton'
 
 interface User {
   id: number,
@@ -9,6 +9,8 @@ interface User {
 }
 
 const UsersPage = async () => {
+
+  throw new Error('This is a  manual error')
 
   const response = await fetch('https://jsonplaceholder.typicode.com/posts',
     // {cache: 'no-store'} (no caching) usefull for data that changes too often
@@ -32,7 +34,7 @@ const UsersPage = async () => {
                 <h1>{user?.title}</h1>
                 {/* <p>{user?.body}</p> */}
               </div>
-              <AddToCart />
+              <ActionableButton actions={{ link: '/products', name: 'See Details' }} />
             </div>
           </section>
         )}

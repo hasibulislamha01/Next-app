@@ -1,5 +1,5 @@
 import React from 'react'
-import AddToCart from '../components/AddToCart'
+// import ActionableButton from '../../src/components/ActionableButtton'
 
 const ProductPage = async() => {
 
@@ -14,7 +14,7 @@ const ProductPage = async() => {
                         <h1>Heading</h1>
                         <p>paragraph</p>
                     </div>
-                    <AddToCart />
+                    {/* <actionableButton /> */}
                 </div>
             </section>
         </section>
