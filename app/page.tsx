@@ -1,12 +1,15 @@
 import { Navbar } from "@/components/SharedComponents/Navbar/Navbar"
 import { Button } from "@/components/ui/button";
 import { AiFillApple } from "react-icons/ai";
+import { JetBrains_Mono, Inter } from "next/font/google";
+
+const jetBrains = JetBrains_Mono({subsets: ['latin']})
+const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
   return (
-    <main>
-      <section className="mx-auto"><Navbar /></section>
-      <h1>Hello Next js </h1>
+    <main className={`${inter.className}`}>
+      <Navbar/>
 
       <h1 className="mt-12 text-center mb-5 font-semibold">shad cn ui button variants</h1>
       <section className="flex items-center gap-5 justify-center">
