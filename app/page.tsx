@@ -8,7 +8,7 @@ const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
   return (
-    <main className={`${inter.className}`}>
+    <main className={`${inter.className || jetBrains.className}`}>
       <Navbar/>
 
       <h1 className="mt-12 text-center mb-5 font-semibold">shad cn ui button variants</h1>
